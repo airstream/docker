@@ -25,6 +25,9 @@ $ docker container run httpd
 # -p, --publish list  Publish a container's port(s) to the host
 $ docker container run --name container1 -d -p 80:80 httpd # Create container with name container1
 
+# Run a command in a running container
+$ docker container exec -it container1 /bin/bash
+
 # Display a live stream of container(s) resource usage statistics
 $ docker container stats container1
 
@@ -46,3 +49,4 @@ $ docker container stop container1
 $ docker container rm container1
 $ docker rm container1
 ```
+
