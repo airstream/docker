@@ -48,5 +48,8 @@ $ docker inspect container1
 $ docker container stop container1
 $ docker container rm container1
 $ docker rm container1
+
+# Check port usage for container 
+$ docker container port container1
 ```
 
