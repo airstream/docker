@@ -27,6 +27,7 @@ $ docker container run --name container1 -d -p 80:80 httpd # Create container wi
 
 # Run a command in a running container
 $ docker container exec -it container1 /bin/bash
+$ docker container exec -it container1 cat /etc/hosts
 
 # Display a live stream of container(s) resource usage statistics
 $ docker container stats container1
