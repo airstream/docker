@@ -65,3 +65,12 @@ $ docker network connect br00 container1      # Add the container to the bridge 
 $ docker network disconnect br00 container1   # Remove network br00 from container
 ```
 
+## Volume
+```bash
+$ docker volume ls                            # List volumes
+$ docker volume create testvol                # Create volume testvol
+$ docker volume inspect testvol               # Inspecting a volume
+$ docker volume rm testvol                    # Remove volume testvol
+```
+
+
