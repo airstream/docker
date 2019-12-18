@@ -73,4 +73,18 @@ $ docker volume inspect testvol               # Inspecting a volume
 $ docker volume rm testvol                    # Remove volume testvol
 ```
 
+### Volume: Bind mounts
+```bash
+# Mount flag
+$ mkdir mountfolder
+$ docker container run -d \
+  --name container-bind-mount1 \
+  --mount type=bind,source="$(pwd)"/mountfolder,target=/app \
+  nginx
+```
+
+```bash
+# Volume flag
+$
+```
 
