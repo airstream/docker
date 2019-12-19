@@ -85,6 +85,11 @@ $ docker container run -d \
 
 ```bash
 # Volume flag
-$
+$ docker container run -d \
+ --name nginx-bind-mount2 \
+ -v "$(pwd)"/target2:/app \
+ nginx
 ```
+
+
 
