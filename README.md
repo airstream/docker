@@ -91,5 +91,13 @@ $ docker container run -d \
  nginx
 ```
 
-
+### Volume for Persistent Storage
+```bash
+$ docker container run -d \
+ --name nginx-volume1 \
+ --mount type=volume,source=html-volume,target=/usr/share/nginx/html/ \
+ nginx
+ 
+ $ docker volume inspect html-volume
+```
 
