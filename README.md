@@ -114,4 +114,35 @@ General guidelines:
 * Sort multi-line arguments.
 * Leverage build cache.
 
-## Docker Images
+## Building Docker Images
+```bash
+Useful flags:
+* -f, --file string: This is the name of the Dockerfile (Default is PATH/Dockerfile).
+* --force-rm: Always remove intermediate containers.
+* --label list: Set metadata for an image.
+* --rm: Remove intermediate containers after a successful build (default is true).
+* --ulimit ulimit: This sets ulimit options (default is []).
+```
+
+```bash
+# Building image by piping the Dockerfile through STDIN
+$ docker image build -t <NAME>:<TAG> -<<EOF
+Build instructions
+EOF
+
+# Example
+$ docker image build -t linuxacademy/nginx:stind --rm -<<EOF
+FROM nginx:latest
+VOLUME ["/usr/share/nginx/html/"]
+EOF
+
+###############################################################
+
+# Building an image using a URL
+$ docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>
+$ docker image build -t <NAME>:<TAG> <GIT_URL>#:<DIRECTORY>
+$ docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>:<DIRECTORY>
+
+# Example 
+$ docker image build -t linuxacademy/weather-app:github https://github.com/linuxacademy/content-weather-app.git#remote-build
+```
