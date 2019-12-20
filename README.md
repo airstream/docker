@@ -135,9 +135,9 @@ $ docker image build -t linuxacademy/nginx:stind --rm -<<EOF
 FROM nginx:latest
 VOLUME ["/usr/share/nginx/html/"]
 EOF
+```
 
-###############################################################
-
+```bash
 # Building an image using a URL
 $ docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>
 $ docker image build -t <NAME>:<TAG> <GIT_URL>#:<DIRECTORY>
@@ -146,3 +146,5 @@ $ docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>:<DIRECTORY>
 # Example 
 $ docker image build -t linuxacademy/weather-app:github https://github.com/linuxacademy/content-weather-app.git#remote-build
 ```
+
+
