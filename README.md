@@ -115,14 +115,12 @@ General guidelines:
 * Leverage build cache.
 
 ## Building Docker Images
-```bash
 Useful flags:
 * -f, --file string: This is the name of the Dockerfile (Default is PATH/Dockerfile).
 * --force-rm: Always remove intermediate containers.
 * --label list: Set metadata for an image.
 * --rm: Remove intermediate containers after a successful build (default is true).
 * --ulimit ulimit: This sets ulimit options (default is []).
-```
 
 ```bash
 # Building image by piping the Dockerfile through STDIN
