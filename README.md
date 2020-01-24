@@ -145,4 +145,16 @@ $ docker image build -t <NAME>:<TAG> <GIT_URL>#<REF>:<DIRECTORY>
 $ docker image build -t linuxacademy/weather-app:github https://github.com/linuxacademy/content-weather-app.git#remote-build
 ```
 
+## Node labels
+* label
+```bash
+ docker node ls
+ docker node update --label-add availability_zone=east <NODE_NAME>
+ ```
+
+* la--placement-pref
+```bash
+ docker service create --name nginx-spread --placement-pref spread=node.labels.availability_zone --replicas 3 nginx
+ docker service ps nginx-spread
+```
 
