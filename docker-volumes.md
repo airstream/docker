@@ -1,6 +1,10 @@
 # Docker Volumes
-
-
+```bash
+$ docker volume ls                            # List volumes
+$ docker volume create testvol                # Create volume testvol
+$ docker volume inspect testvol               # Inspecting a volume
+$ docker volume rm testvol                    # Remove volume testvol
+```
 
 ## Volume: Bind mounts
 ```bash
