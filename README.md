@@ -151,10 +151,15 @@ $ docker image build -t linuxacademy/weather-app:github https://github.com/linux
  docker node ls
  docker node update --label-add availability_zone=east <NODE_NAME>
  ```
-
 * la--placement-pref
 ```bash
  docker service create --name nginx-spread --placement-pref spread=node.labels.availability_zone --replicas 3 nginx
  docker service ps nginx-spread
 ```
 
+## Docker Storage in Depth
+overlay2 - [default] current Ubuntu and CentOS/RHEL versions 
+```bash
+docker container inspect storage_nginx # Use docker inspect to find the location of the container's data on the host
+docker image inspect nginx #  docker inspect to find the location of an image's data
+```
