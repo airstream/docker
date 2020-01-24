@@ -170,3 +170,4 @@ Supports two modes: **loop-lvm** and **direct-lvm**
 
 **direct-vm**: data on separate disk; requires an addtional storage device, good performance (for production)
 
+### Docker Volumes
