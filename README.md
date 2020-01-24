@@ -7,8 +7,7 @@
 
 ## [Docker Volumes](./docker-volumes.md)
 
-## Dockerfile
-[Dockerfile](./dockerfile.md)
+## [Dockerfile](./dockerfile.md)
 
 ## Building Docker Images
 Useful flags:
