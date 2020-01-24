@@ -163,3 +163,10 @@ overlay2 - [default] current Ubuntu and CentOS/RHEL versions
 docker container inspect storage_nginx # Use docker inspect to find the location of the container's data on the host
 docker image inspect nginx #  docker inspect to find the location of an image's data
 ```
+DeviceMapper - storage driver for CentOS7 and earlier. 
+Supports two modes: **loop-lvm** and **direct-lvm**
+
+**loop-lvm**: additional physical disk using files on the local disk; does not require an additional storage device; bad performance (only for testing)
+
+**direct-vm**: data on separate disk; requires an addtional storage device, good performance (for production)
+
