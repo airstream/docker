@@ -1,4 +1,7 @@
 # Docker commands
+
+## [Docker Install](./docker-install.md)
+
 ## [Docker Select a storage driver](./docker-storage-driver.md)
 
 ## [Docker Images](./docker-images.md)
@@ -10,6 +13,8 @@
 ## [Docker Volumes](./docker-volumes.md)
 
 ## [Dockerfile](./dockerfile.md)
+
+## [Docker Swarm](./docker-swarm.md)
 
 ## Building Docker Images
 Useful flags:
