@@ -22,7 +22,7 @@ $ docker swarm join-token manager
 Run output command on worker node(s)
 
 ```bash
-$ docker swarm join --token <token> <swarm manager private IP>:<port>
+$ docker swarm join --token <token> <swarm manager private IP>:2377
 ```
 
 ## Status
