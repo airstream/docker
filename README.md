@@ -2,13 +2,15 @@
 
 ## [Docker Install](./docker-install.md)
 
-## [Docker Select a storage driver](./docker-storage-driver.md)
-
 ## [Docker Images](./docker-images.md)
+
+## [Docker Registry](./docker-registry.md)
 
 ## [Docker Container](./docker-container.md)
 
 ## [Docker Network](./docker-network.md)
+
+## [Docker Select a storage driver](./docker-storage-driver.md)
 
 ## [Docker Volumes](./docker-volumes.md)
 
@@ -71,5 +73,3 @@ Supports two modes: **loop-lvm** and **direct-lvm**
 **loop-lvm**: additional physical disk using files on the local disk; does not require an additional storage device; bad performance (only for testing)
 
 **direct-vm**: data on separate disk; requires an addtional storage device, good performance (for production)
-
-### [Docker Volumes](./docker-volumes.md)
